@@ -30,16 +30,22 @@ router.post("/add", async (req, res) => {
     }
 });
 
-router.get("/", async(req,res)=>{
+router.get("/", async (req, res) => {
+  try {
     const token = req.headers.authorization;
     const decoded = jwt.verify(
-        token,
-        process.env.JWT_SECRET
+      token,
+      process.env.JWT_SECRET
     );
     const notes = await Note.find({
-        userId:decoded.id
+      userId: decoded.id
     });
     res.json(notes);
+  } catch (error) {
+    res.status(500).json({
+      msg: error.message
+    });
+  }
 });
 
 router.put("/:id",async(req,res)=>{
