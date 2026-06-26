@@ -12,7 +12,7 @@ A full-stack Notes Management Application built using the MERN Stack with JWT Au
 - Backend deployed on Render
 - Frontend deployed on Vercel
 ```
-## 🌐Live Demo : thulasi-notesapp.vercel.app
+## 🌐Live Demo : [NotesApp](https://thulasi-notesapp.vercel.app)
 
 ## Tech Stack
 
