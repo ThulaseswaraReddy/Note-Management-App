@@ -15,10 +15,10 @@ A full-stack Notes Management Application built using the MERN Stack with JWT Au
 ## 🌐Live Demo : [NotesApp](https://thulasi-notesapp.vercel.app)
 
 ## Tech Stack
-
+```
 Frontend: React.js, Axios, Bootstrap, React Router
 Backend: Node.js, Express.js, MongoDB, Mongoose, JWT, bcryptjs
-
+```
  ## Installation
  ```
 ## Backend
